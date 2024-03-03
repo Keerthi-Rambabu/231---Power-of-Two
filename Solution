@@ -1,0 +1,15 @@
+class Solution {
+    public boolean isPowerOfTwo(int n) {
+        if(n<=0)
+        {
+            return false;
+        }
+       long ans=(long)n&(n-1); // here we can also take int according to the constraints given in question But keep long will be more accurate.
+       if(ans==0)
+       {
+           return true;
+       }
+       return false;
+        
+    }
+}
